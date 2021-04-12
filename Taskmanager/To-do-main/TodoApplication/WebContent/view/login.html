@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+	<title>Todo - Login</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/login.css" rel="stylesheet">
+	
+</head>
+<body>
+	<header>
+
+		<nav class="navbar navbar-default">
+			<a href="/" class="navbar-brand">Brand</a>
+			<ul class="nav navbar-nav">
+				<li><a href="#">Home</a></li>
+				<li><a href="RegistrationServlet">Register</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="#">Login</a></li>
+			</ul>
+		</nav>
+
+	</header>
+	
+	<div class="container">
+		<form action="LoginServlet" method="post" class="form-signin">
+			<input type="text" name="name" placeholder="Name" class="form-control" required autofocus/><br>
+			<input type="password" name="password" placeholder="Password" class="form-control" required autofocus/>
+			<button type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
+			<br>
+			<!--  captch-->
+			<div class="g-recaptcha" data-sitekey="6LeR8tQZAAAAAPM5_g3DhNq8GpjLfX1OHH1v_wU2"></div> 
+			<br>
+			<a href="view/forgotPassword.html">Forgot Password?</a>
+		</form>
+		
+		<br>
+		<!-- Maps -->
+		<center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.303988772607!2d78.48784931495173!3d17.397193188072745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99c44533324f%3A0x8aa5456a7d836bb5!2sKeshav%20Memorial%20Institute%20Of%20Technology!5e0!3m2!1sen!2sin!4v1602038587600!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></center>
+	</div>
+	
+	<!-- captcha script -->
+	<script src="https://www.google.com/recaptcha/api.js"></script>
+	
+	<!--Start of Tawk.to Script-->
+	<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+		var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+		s1.async=true;
+		s1.src='https://embed.tawk.to/5f7d2e134704467e89f54673/default';
+		s1.charset='UTF-8';
+		s1.setAttribute('crossorigin','*');
+		s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+	<!--End of Tawk.to Script-->
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
